@@ -1,0 +1,114 @@
+/* 
+-container
+-opacity hover
+-select header
+-select padding
+-hover effect 1 (left to right)
+-hover effect 2 (top to botton)
+*/
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hover-opacity {
+  transition: opacity 0.5s;
+}
+.hover-opacity:hover {
+  opacity: 0.8;
+}
+.ltr-effect,
+.tb-effect {
+  position: relative;
+}
+.ltr-effect::after,
+.tb-effect::after {
+  position: absolute;
+  content: "";
+  background: #333;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.tb-effect::after {
+  height: 0;
+  transition: height 0.5s;
+}
+.ltr-effect::after {
+  width: 0;
+  transition: width 0.5s;
+}
+
+.ltr-effect:hover::after {
+  width: 100%;
+}
+.tb-effect:hover::after {
+  height: 100%;
+}
+/* Css  general style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*css3*/
+}
+:root {
+  --mainColor: #6195ff;
+  --grayColor: #999;
+  --whitecolor: #fff;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+body {
+  font-family: "Varela Round", sans-serif;
+}
+
+.clear {
+  clear: both;
+}
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: montserrat, sans-serif;
+}
+button {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-header {
+  text-align: center;
+}
+.section-header .section-title {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.section-header .line {
+  display: block;
+  height: 5px;
+  width: 60px;
+  margin: 0 auto 70px auto;
+  background-color: var(--mainColor);
+}
+.pd-y {
+  padding: 120px 0;
+}
+ul {
+  list-style: none;
+}

@@ -1,0 +1,30 @@
+/* FOOTER */
+.footer {
+  background-color: #1c1c1c;
+  text-align: center;
+  padding: 60px 0;
+}
+.footer-links {
+  list-style: none;
+  margin: 20px 0;
+}
+.footer-links li {
+  display: inline-block;
+}
+.footer-links li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: var(--mainColor);
+  color: #fff;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+.footer-links li a i {
+  line-height: 50px;
+}
+.footer .copyright {
+  color: var(--grayColor);
+  font-size: 15px;
+  text-transform: uppercase;
+}

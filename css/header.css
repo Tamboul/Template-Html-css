@@ -1,0 +1,74 @@
+/* Header */
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* .header-content {
+    overflow: hidden; to solve float problem
+  } */
+.header .logo {
+  width: 40%;
+  float: left;
+}
+.header .logo img {
+  width: 20%;
+  margin-top: 15px;
+}
+.header .nav {
+  width: 60%;
+  float: left;
+  list-style: none;
+  text-align: right;
+}
+.header .nav > li {
+  display: inline-block;
+  text-align: right;
+}
+.header .nav > li > a {
+  font-size: 15px;
+  color: white;
+  display: block;
+  padding: 30px 15px;
+}
+.header .nav > li > a:after,
+.header .nav > li > a.active:after {
+  margin-top: 2px;
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: var(--mainColor);
+  transition: width 0.5s;
+}
+.header .nav > li > a.active:after,
+.header .nav > li > a:hover::after {
+  width: 100%;
+}
+.header .nav > li > a:after {
+  width: 0;
+}
+.dropdown {
+  position: relative;
+}
+.drop-menu {
+  position: absolute;
+  background-color: var(--mainColor);
+  width: 150px;
+  text-align: center;
+  left: -50%;
+  top: 70%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s;
+  list-style: none;
+}
+.drop-menu a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+.dropdown:hover .drop-menu {
+  opacity: 1;
+  visibility: visible;
+}

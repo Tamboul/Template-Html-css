@@ -1,0 +1,37 @@
+.testimoail {
+  position: relative;
+  background-image: url("../images/background/background3.webp");
+  background-attachment: fixed;
+  height: 400px;
+}
+.testimoail-content {
+  overflow: hidden;
+  padding: 120px 0;
+  width: 90%;
+  margin: auto;
+}
+.testimoail-item {
+  width: 50%;
+  float: left;
+  color: #fff;
+}
+.testimoail-item .testimoail-toplayer {
+  padding: 10px 2px 40px 100px;
+  position: relative;
+}
+.testimoail-item .testimoail-toplayer img {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border-radius: 50%;
+}
+.testimoail-item .testimoail-toplayer h3 {
+  margin: 5px 0;
+}
+.testimoail-item .testimoail-toplayer span {
+  color: var(--mainColor);
+}
+.testimoail-desc {
+  line-height: 1.5;
+  font-size: 16px;
+}
